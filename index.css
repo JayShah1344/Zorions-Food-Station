@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  position: relative;
+  height: 85%;
+  width: 58%;
+  background-color: #fff;
+  box-shadow: 0px 0px 50px -1px rgb(0, 0, 0, 0.5);
+  padding: 0px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: 1s linear;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: 350px;
+  width: 250px;
+  background-color: #282828;
+  transition: 1s;
+}
+
+.logohead {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.foodimg {
+  width: 300px;
+  margin: 20px 0px 0px -30px;
+  filter: drop-shadow(0px 0px 20px rgb(0, 0, 0, 0.5));
+}
+.nav {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.svg-list {
+  height: 100px;
+}
+
+.rightmenu {
+  display: flex;
+  align-items: center;
+}
+
+.rightmenu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.rightmenu ul li {
+  padding: 3px 10px;
+}
+
+.rightmenu ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  transition: 0.3s linear;
+}
+.rightmenu ul li a:hover {
+  color: #dc1313;
+}
+
+.rightmenu ul li a::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #dc1313;
+  border-radius: 50%;
+  bottom: -5px;
+  left: 45%;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.rightmenu ul li a:hover:before {
+  opacity: 1;
+}
+
+.usercart {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.userimg {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.leftmenu {
+  width: 20px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.leftmenu a {
+  margin: 30px 0px;
+  padding: 0px 5px;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  font-weight: 600;
+  transition: 0.3s linear;
+  transform: rotate(-90deg);
+}
+
+.leftmenu a:hover {
+  color: #dc1313;
+}
+
+header section {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  height: 90%;
+}
+
+.content {
+  position: relative;
+  left: 335px;
+  max-width: 50%;
+  margin-top: 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: 1s linear;
+}
+
+.dishname {
+  font-size: 40px;
+  transition: 1s linear;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 13px;
+  font-weight: 600;
+  width: 290px;
+  word-break: break-all;
+}
+
+.price-order {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price-cont {
+  font-size: 20px;
+  color: #dc1313;
+  line-height: 18px;
+}
+
+.amount {
+  font-size: 7px;
+  width: 50px;
+}
+
+.ordernow {
+  padding: 4px 20px;
+  background-color: #121213;
+  color: #fff;
+  margin-left: 35px;
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cards {
+  position: relative;
+  top: 13%;
+  left: 0%;
+  padding-left: 30px;
+  width: 99%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  scroll-behavior: smooth;
+  transition: 1s linear;
+  overflow: auto;
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  min-height: 125px;
+  min-width: 125px;
+  border: 1px solid #000;
+  margin-right: 13px;
+  background-color: #282828;
+  border-radius: 50px 10px 10px 10px;
+  transition: 0.3s linear;
+}
+
+.card:hover {
+  scale: 1.1;
+}
+
+.c9 {
+  margin-right: 0px;
+}
+
+.card-img {
+  width: 70px;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+}
+
+.steam {
+  width: 60px;
+  height: 80px;
+  position: absolute;
+  top: -35px;
+  left: -5%;
+}
+
+.card-price {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card-name {
+  position: absolute;
+  top: 55%;
+  color: white;
+  font-size: 11px;
+  font-family: 500;
+  padding: 0px 10px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.perplate {
+  position: absolute;
+  top: 70%;
+  color: rgb(203, 203, 203);
+  font-size: 8px;
+  padding: 0px 10px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.rating {
+  position: absolute;
+  top: 87%;
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 0px 10px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-cart {
+  height: 20px;
+  position: absolute;
+  top: 84%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.social {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid black;
+  top: 12%;
+  transition: 1s linear;
+}
+
+.btn {
+  margin-left: 30px;
+}
+
+.left-btn {
+  height: 15px;
+  transition: 0.3 s linear;
+  cursor: pointer;
+}
+
+.right-btn {
+  height: 15px;
+  transform: rotate(180deg);
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.s-links {
+  margin-top: 4px;
+  height: 18px;
+  transition: 0.3 s linear;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.s-links:hover {
+  scale: 1.1;
+}
+
+.thread {
+  height: 19px;
+
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    width: 60%;
+  }
+
+  .social {
+    border-top: 1px solid transparent;
+    top: 11%;
+  }
+}
+
+@media only screen and (max-width: 1275px) {
+  header {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1175px) {
+  header {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1095px) {
+  header {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  header {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  header {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  header {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards {
+    top: 18%;
+  }
+
+  .social {
+    top: 20%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .leftmenu a {
+    font-size: 15px;
+  }
+
+  .leftmenu {
+    position: relative;
+    top: -5%;
+    left: -2%;
+  }
+
+  .rightmenu ul {
+    opacity: 0;
+  }
+}
+
+  @media only screen and (max-width: 770px) {
+    .logo {
+      left: 33%;
+      height: 220px;
+      width: 200px;
+    }
+
+    .foodimg {
+      width: 247px;
+      position: relative;
+      top: -8%;
+    }
+
+    .content {
+      top: 29%;
+      left: 175px;
+    }
+
+    .dishname {
+      font-size: 30px;
+      position: relative;
+      left: 10%;
+    }
+
+    .description {
+      width: 330px;
+    }
+    .ordernow {
+      position: relative;
+      top: -7px;
+      right: -64%;
+    }
+
+    .cards {
+      top: 28%;
+    }
+
+    .social {
+      top: 27%;
+    }
+  }
+
+
+  @media only screen and (max-width: 730px) {
+           
+    header section { 
+      width: 90%;
+  }
+  .content {
+    top: 30%;
+    left: 140px;
+  }
+  }
+
+
+  @media only screen and (max-width: 615px) {
+           
+    header section { 
+      width: 90%;
+  }
+
+
+  .content {
+    top: 31%;
+    left: 105px;
+  }
+
+  .cards{
+    top: 30%;
+  }
+
+  .social{
+    top: 29%;
+  }
+  }
+
+
+  @media only screen and (max-width: 615px) {
+    .content {
+      top: 33%;
+      left: 85px;
+    }
+    
+    
+  .cards{
+    top: 32%;
+  }
+
+  .social{
+    top: 31%;
+  }
+  }
+
+  @media only screen and (max-width: 615px) {
+    .ordernow{
+      right: -27%;
+    }}
+
+    @media only screen and (max-width:495px) {
+.content{
+  left: 48px;
+}
+
+.cards {
+  top: 33%;
+}
+
+.social {
+  top: 32%;
+}
+
+
+    }
+
+    @media only screen and (max-width:450px) {
+
+      .content {
+        top: 33%;
+        left: 27px;
+    }
+   }
+
+   @media only screen and (max-width:420px) {
+
+  .nav{
+    opacity: 0;
+  }
+
+  .content {
+    top: 33%;
+    left: 26px;
+}
+  
+ }
